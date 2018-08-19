@@ -19,10 +19,11 @@ end
 def self.average_distance #AVG DISTANCE OF ALL RIDES
   sum = 0
   self.all.each do |x|
-  sum +=  x.distance.count
+  sum +=  x.distance
+    end
   sum/self.all.count
-  end
 end
+
 
 
 

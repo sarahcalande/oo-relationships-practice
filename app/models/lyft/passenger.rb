@@ -22,7 +22,7 @@ end
 
 def drivers #FIRST MAKE THE RIDES METHOD CUS THATS HOW THEY CONNECTED
   self.rides.map do |ride|
-    ride.drivers
+    ride.driver
   end
 end
 
@@ -38,6 +38,7 @@ def total_distance #NOW USE THAT OTHER METHOD TO CALCULATE THE
   sum = 0
   ridedistance.each do |distance|
     sum += distance
+      sum
   end
 end
 

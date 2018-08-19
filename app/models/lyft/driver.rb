@@ -47,7 +47,7 @@ end
 #takes an argument of a distance (float) and
 # returns all drivers who have exceeded that mileage
 def self.mileage_cap(distance)
-  self.all.map do |driver|
+  self.all.select do |driver|
     driver.total_distance > distance
   end
 end
