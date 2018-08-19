@@ -40,6 +40,7 @@ def total_distance #NOW USE THAT OTHER METHOD TO CALCULATE THE
   ridedistance.each do |distance|
     sum += distance
   end
+    sum
 end
 
 
