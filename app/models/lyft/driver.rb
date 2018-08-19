@@ -27,6 +27,13 @@ def passengers ##ITERATE THRU RIDES METHOD BC THATS HOW THEY CONNECTED
   end
 end
 
+def ridedistance #SAME AS IN DRIVER, ITERATES THRU METHOD
+  # FIRST CUS DISTANCE IS AN ATTRIBUTE BELONGING TO RIDE
+  self.rides.map do |ride|
+    ride.distance
+  end
+end
+
 def total_distance #NOW USE THAT OTHER METHOD TO CALCULATE THE
   # TOTAL THE DRIVER TRAVELED
   sum = 0
