@@ -27,9 +27,11 @@ def passengers ##ITERATE THRU RIDES METHOD BC THATS HOW THEY CONNECTED
   end
 end
 
-def ridedistance ##DISTANCE IS AN ATTR OF RIDE SO ITERATE THAT METHOD
-  self.rides.map do |ride|
-    ride.distance
+def total_distance #NOW USE THAT OTHER METHOD TO CALCULATE THE
+  # TOTAL THE DRIVER TRAVELED
+  sum = 0
+  ridedistance.each do |distance|
+    sum += distance
   end
 end
 
@@ -39,7 +41,7 @@ end
 # returns all drivers who have exceeded that mileage
 def self.mileage_cap(distance)
   self.all.map do |driver|
-    driver.ridedistance > distance
+    driver.total_distance > distance
   end
 end
 
